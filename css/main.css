@@ -80,5 +80,15 @@ body {
 }
 
 .transform .b3:hover {
-    transform: scale(0.7)
+    transform: scale(0.7);
+}
+
+/* Default State */
+.transform .b4 {
+    transform: skew(10deg, 10deg);
+}
+
+/* Hover State */
+.transform .b4:hover {
+    transform: skew(0);
 }
