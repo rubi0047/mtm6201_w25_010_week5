@@ -1,0 +1,29 @@
+body {
+    background-color: antiquewhite;
+}
+
+.transition, .transform, .animation {
+    border: 1px solid #999;
+    margin: 1rem 0;
+}
+
+.box {
+    width: 200px;
+    height: 200px;    
+}
+
+.b1 {
+    background-color: lightgoldenrodyellow;
+}
+
+.b2 {
+    background-color: lightblue;
+}
+
+.b3 {
+    background-color: lightpink;
+}
+
+.b4 {
+    background-color: lightsalmon;
+}
