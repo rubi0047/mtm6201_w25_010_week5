@@ -27,3 +27,39 @@ body {
 .b4 {
     background-color: lightsalmon;
 }
+
+/* CSS Transitions */
+
+/* Property, duration, timing function, delay */
+
+.transition .b1 {
+    transition: width 1s ease-in-out 0.5s;
+}
+
+.transition .b1:hover {
+    width:400px
+}
+
+.transition .b2 {
+    /* can list in one line or use second line to make all elements follow the same rules */
+    transition: width 1s 0.5s, height 0.5s 1s;
+    transition-timing-function: ease-in;
+}
+
+.transition .b2:hover {
+    width:400px;
+    height: 400px;
+    background-color: lightseagreen;
+}
+
+.transition .b3 {
+    transition: all 1s ease-out 0.5s;
+}
+
+.transition .b3:hover {
+    background-color: lightslategray;
+    border-radius: 50%;
+}
+
+/* CSS Transforms */
+
