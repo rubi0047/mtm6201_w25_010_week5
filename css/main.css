@@ -63,3 +63,22 @@ body {
 
 /* CSS Transforms */
 
+.transform .box {
+    transition: all 1s ease-out 0.3s;
+}
+
+.transform .b1 {
+    transform-origin: bottom right;
+}
+
+.transform .b1:hover {
+    transform: rotate(45deg);
+}
+
+.transform .b2:hover {
+    transform: translate(20px, 30px)
+}
+
+.transform .b3:hover {
+    transform: scale(0.7)
+}
