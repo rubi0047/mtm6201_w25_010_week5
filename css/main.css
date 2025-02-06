@@ -92,3 +92,61 @@ body {
 .transform .b4:hover {
     transform: skew(0);
 }
+
+/* CSS Animation */
+
+@keyframes changeColor {
+    from {
+        background-color: palevioletred;
+    }
+    to {
+        background-color: lightseagreen;
+    }
+}
+
+.animation .b1:hover {
+    animation-name: changeColor;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards; /* both, backwards */
+}
+
+@keyframes moveAround{
+    0% {
+        transform: translate(0,0);
+    }
+    25%{
+        transform: translate(200px,0);
+    }
+    50%{
+        transform: translate(200px,200px);
+    }
+    75% {
+        transform: translate(0,200px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+.animation .b2 {
+    /* name and duration together */
+    animation: moveAround 4s;
+    animation-delay: 2s;
+    animation-iteration-count: 5;
+    animation-direction: reverse;
+}
+
+@keyframes multipleTransformations{
+    0%{
+        transform: scale(0.5) translateX(0);
+    }
+    100%{
+        transform: scale(1.4) translateX(500px);
+    }
+}
+
+.animation .b3 {
+    /* name, duration, timingfunction, delay count, direction */
+    animation: mltipleTransformations 2s cubic-bezier(0.12, 0, 0.39, 0) 3s 12 alternate;
+}
