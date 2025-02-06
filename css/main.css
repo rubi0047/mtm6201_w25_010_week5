@@ -148,5 +148,5 @@ body {
 
 .animation .b3 {
     /* name, duration, timingfunction, delay count, direction */
-    animation: mltipleTransformations 2s cubic-bezier(0.12, 0, 0.39, 0) 3s 12 alternate;
+    animation: multipleTransformations 2s cubic-bezier(0.12, 0, 0.39, 0) 3s 12 alternate;
 }
